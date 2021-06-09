@@ -1,0 +1,82 @@
+<%- include("partials/header") %> 
+
+
+<body>
+
+  <h1 style="background-color: gold;">Welcome to The Coin</h1>
+
+  <br>
+
+  <p name="lastBlock" class="lastBlock"></p>
+
+  <br>
+
+  <!-- transaction form -->
+  <h3>Enter your Transaction info below.</h3>
+  <form id="transactionForm" action="/transaction" method="POST">
+    <label for="fromAddress">From Address:</label>
+    <input id="from" name="fromAddress" type="text" placeholder="Your wallet key">
+    <br>
+    <label for="toAddress">To Address:</label>
+    <input id="to" name="toAddress" type="text" placeholder="Their wallet key">
+    <br>
+    <label for="sendAmount">Amount:</label>
+    <input id="sendAmount" name="amount" type="text" placeholder="Amount to send">
+    <p id="transactionP"> <%=amount%></p>
+  </form> 
+
+  <br>
+  <hr>
+  <br>
+  
+  <!-- mine form, (deleted /mineBlock and POST from line 48 because it was mining two blocks-->
+  <h3>Enter your Miner Address below.</h3>
+  <form id="mineForm" action="" method="">
+    <label for="fromAddress">Reward Address:</label><br>
+    <input id="minerInput" name="fromAddress" type="text" placeholder="Your reward address">
+    <p id="mineP"></p>
+  </form> 
+
+  <br>
+  <hr>
+  <br>
+  
+  <!-- display wallet -->
+  <h3>Your Wallet Balance.</h3>
+  <form id="walletForm" action="" method="">
+    <label for="wallet">Wallet Address:</label><br>
+    <input id="walletInput" name="wallet" type="text" placeholder="Your wallet address">
+    <p id="walletP"></p>
+  </form> 
+
+
+  <script src="script.js"></script>
+</body>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 offset-4">
+            <h1>Home Page</h1>
+        </div>
+    </div>
+    <div class="row align-items-start justify-content-center">
+        <div class="offset-2">
+            <% objectArray.forEach(element => { %>
+                <div class="col-3 order card">
+                    <h2>Name: <%= element.name %> </h2>
+                    <p>Description: <%= element.description %> </p>
+                    <p>Age: <%= element.age %> </p>
+                </div>
+
+            <% }) %>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") %> 
+
+
+
+

@@ -1,0 +1,9 @@
+body {
+    background-color: lightskyblue;
+    height: 100vh;
+}
+
+input{
+    display: flex-wrap;
+}
+

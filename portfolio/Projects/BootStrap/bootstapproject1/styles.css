@@ -1,0 +1,47 @@
+
+
+#gray {
+    color: grey;
+}
+
+#background {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* align-items: center; */
+    align-self: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    height: auto;
+    width: auto;
+}
+
+#revolutionary {
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-content: space-between;
+}
+
+#signup {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-content: space-between;
+    color: white;
+}
+
+#backgroundimage {
+    background: url("image3.png");
+    width: 200px;
+    height: 8px;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    background-position: 0 500px;
+    } 

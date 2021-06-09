@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#home_container {
+    background: url('/images/curtain-1275200_1280.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#home_container h1 {
+    width: 75%;
+    margin-top: 15%;
+}
+
+button {
+    margin: 0 40%;
+}
+
+.movie-info {
+    width: 50%;
+    margin: 2% 10%;
+}

@@ -1,0 +1,12 @@
+<% data.forEach(element => { %>
+    <p>Name: <%= element.name%>. Rating: <%= element.rating%>. Price: <%= element.price %>.</p>
+    
+    
+
+    <% let stars = element.rating % 1 == 0 ? `/regular/regular_${element.rating}.png` : `/regular/regular_${Math.floor(element.rating)}_half.png` %>
+
+    <p>Stars: 
+        <img src="<%= stars %>" alt=""> 
+    </p>
+
+<% }) %>

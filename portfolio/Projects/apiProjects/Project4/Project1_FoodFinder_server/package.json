@@ -1,0 +1,19 @@
+{
+  "name": "foodfinder",
+  "version": "1.0.0",
+  "description": "template for building APIs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JM",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "yelp-fusion": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}

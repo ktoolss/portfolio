@@ -1,0 +1,20 @@
+<%- include('partials/header') %> 
+
+    <body id="home_container">
+        <%- include('partials/navbar') %> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg">
+                    <h1 class="text-white text-uppercase mx-auto text-center">
+                        In the mood to catch a flick? See what movies are playing now!
+                    </h1>
+
+                    <!-- * sends GET to /search -->
+                    <form action="/search" method="GET">
+                        <button type="submit" class="btn btn-warning btn-lg text-white">
+                            Show me a list of movies.
+                        </button>
+                    </form>
+        
+
+<%- include('partials/footer') %> 

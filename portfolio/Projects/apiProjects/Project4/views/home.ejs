@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Finder</title>
+</head>
+<body>
+    <!-- * sends GET request to /locationSearch on our server -->
+    <form action="/locationSearch" method="get">
+        <label for=""> Enter Location:
+        <input 
+            type="search" 
+            name="locale" 
+            id="location" 
+            autocomplete="off"
+            autofocus
+            placeholder="Enter your location..."/>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

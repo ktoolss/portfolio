@@ -1,0 +1,15 @@
+{
+  "name": "initexercise",
+  "version": "1.0.0",
+  "description": "This is my amazing project!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kristian",
+  "license": "ISC",
+  "dependencies": {
+    "casual": "^1.6.2",
+    "one-liner-joke": "^1.2.0"
+  }
+}

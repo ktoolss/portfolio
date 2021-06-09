@@ -1,0 +1,128 @@
+<%- include("partials/header") %> 
+
+
+
+<div class="container">
+    <!-- <div class="row">
+        <div class="col">
+            <h1 class="text-center mt-5">Kristian's Portfolio</h1>
+        </div>
+    </div> -->
+    <!-- end of first row -->
+
+
+    
+    <div class="row">
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <!-- * using data here -->
+                <% data[0].forEach(element => { %>
+                    <class class="col">
+                        <div class="portfolio-item-wrapper">
+                            <div class = "portfolio-img-background" style = "background-image:url(<%= element.src %>)"></div>
+                            
+                            <a href=<%= element.href%>>
+                                <div class="img-text-wrapper">
+                                    <div class = "logo-wrapper">
+                                        <img src=<%= element.logo%>
+                                        ></div>
+
+                                    <div class = "subtitle">
+                                        <%= element.content %>
+                                    </div>
+
+                                </div>
+                            </a>    
+                        </div>
+                        
+                    </class>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+    <!-- end of second row -->
+    
+    <div class="row">
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <!-- * using data here -->
+                <% data[1].forEach(element => { %>
+                    <class class="col">
+                        <div class="portfolio-item-wrapper">
+                            <div class = "portfolio-img-background" style = "background-image:url(<%= element.src %>)"></div>
+                            
+                            <a href=<%= element.href%>>
+                                <div class="img-text-wrapper">
+                                    <div class = "logo-wrapper">
+                                        <img src=<%= element.logo%>
+                                        ></div>
+
+                                    <div class = "subtitle">
+                                        <%= element.content %>
+                                    </div>
+
+                                </div>
+                            </a>    
+                        </div>
+                        
+                    </class>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+    <!-- end of third row -->
+    
+    <div class="row">
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <!-- * using data here -->
+                <% data[2].forEach(element => { %>
+                    <class class="col">
+                        <div class="portfolio-item-wrapper">
+                            <div class = "portfolio-img-background" style = "background-image:url(<%= element.src %>)"></div>
+                            
+                            <a href=<%= element.href%>>
+                                <div class="img-text-wrapper">
+                                    <div class = "logo-wrapper">
+                                        <img src=<%= element.logo%>
+                                        ></div>
+
+                                    <div class = "subtitle">
+                                        <%= element.content %>
+                                    </div>
+
+                                </div>
+                            </a>    
+                        </div>
+                        
+                    </class>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+    <!-- end of fourth row -->
+    
+    
+    
+
+
+
+</div>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('img-darken');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+    });
+    });
+</script>
+
+<%- include("partials/footer") %> 
