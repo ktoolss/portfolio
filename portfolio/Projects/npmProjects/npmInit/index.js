@@ -1,1 +1,0 @@
-// Use npm init to create the package.json file.
